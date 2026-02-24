@@ -1,16 +1,11 @@
-# Case Study 1
-Grocery-Billing-System_PalakPandey_202501100700101_B
-total = 0
-items=int(input("Enter number of items: "))
-for i in range(1,items+1):
-    price = float(input("Enter price: "))
-    items_quantity = int(input("Enter quantity: "))
-    total = total + (price *items_quantity)
-print("Original Total =", total)
-if total > 100:
-    discount = total * 0.10
-else:
-    discount = 0
-print("Discount =", discount)
-final_amount = total - discount
-print("Final Amount =", final_amount)
+PROBLEEM STATEMENT 
+A grocery store wants to calculate the total cost of 5 different items purchased by a customer.
+Each item can be bought in multiple quantities.
+
+If the total bill exceeds Rs. 100, a 10% discount should be applied.
+Finally, display the total amount, discount (if any), and the final payable amount.
+
+Approach
+1. User enters the price of 5 items.
+2. User enters the quantity for each item.
+3. The program calculates the total cost:
